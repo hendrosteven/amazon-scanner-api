@@ -10,7 +10,7 @@ Amazon.reviewDownload = async (_asin, result) => {
     reviewData = await amazonScraper.reviews({
       asin: _asin,
       number: 100,
-      rating: [1, 5],
+      rating: [1, 3],
     });
     //result(null, reviewData);
   } catch (err) {
